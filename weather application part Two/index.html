@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        img{
+            height: 100px;
+            width: 120px;
+        }
+    </style>
+</head>
+<body id="body">
+    
+    <div class="container">
+        <div class="search-container">
+            <input type="search"  id="search" placeholder="Search"  >
+            <button id="btn">Search</button>
+        </div>
+        <div class="temperature-container">
+            <div class="cityDate">
+                <h1 id="city">Enter City Name in Search Bar</h1>
+                
+            </div>
+            <div id="image" class="image">
+                <!-- <img src="./img/clearsun.png" alt=""> -->
+            </div>
+            <div style="margin-bottom: 25px;">
+
+                <h2 style="text-align: center;" id="date">clear</h2>
+            </div>
+            <div class="temperature">
+                <h1 style="text-align: center;"><span id="degree"></span>&#176C</h1>
+                <p style="text-align: center; margin-top: 8px;">Feels Like <span id="feelTemp"></span>&#176C</p>
+            </div>
+        </div>
+        <div class="weather-details">
+            <div style="margin-top: 2%;" class="details">
+                <p>Humidity</p>
+                <p><span id="humidity"></span> %</p>
+            </div>
+            <div class="details">
+                <p>Wind Speed</p>
+                <p><span id="windspeed"></span> Km/h</p>
+            </div>
+            <div class="details">
+                <p>Wind Direction</p>
+                <p id="winddirection">W</p>
+            </div>
+            <div class="details">
+                <p>Pressure</p>
+                <p><span id="pressure"></span> <span>hPa</span></p>
+            </div>
+            <div  class="details">
+                <p>Cloud PCT</p>
+                <p><span id="pct"></span> %</p>
+            </div>
+            <div  class="details">
+                <p>AQI</p>
+                <p><span id="aqi"></span> <span id="comment"></span></p>
+            </div>
+            <div class="details">
+                <p>Sun Rise</p>
+                <p><span id="sunrise"></span> <span>(+GMT)</span></p>
+            </div>
+            <div style="margin-bottom: 2%;" class="details">
+                <p>Sun Set</p>
+                <p><span id="sunset"></span> <span>(+GMT)</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
